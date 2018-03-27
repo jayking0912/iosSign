@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @end
 
@@ -23,6 +24,48 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)JumpToUrlScheme:(NSString*)webUrlText{
+    NSCharacterSet *encodeUrlSet = [NSCharacterSet URLQueryAllowedCharacterSet];
+    NSString *encodeUrl = [webUrlText stringByAddingPercentEncodingWithAllowedCharacters:encodeUrlSet];
+    
+    NSURL *url = [NSURL URLWithString:encodeUrl];
+    if([[UIApplication sharedApplication] canOpenURL:url]){
+        [[UIApplication sharedApplication] openURL:url options:nil completionHandler:nil];
+        return true;
+    }
+    else{
+        NSLog(@"未安装");
+        return false;
+    }
+}
+
+
+- (IBAction)JumpJD:(id)sender {
+//    NSURL *url = [NSURL URLWithString:@"alipay://"];
+    //京东签到会员活动主页
+//    NSString *temp = [NSString stringWithFormat:@"openApp.jdMobile://virtual?params={\"sourceType\":\"sale-act\",\"sourceValue\":\"jumpFromShare\",\"category\":\"jump\",\"des\" : \"DM\",\"dmurl\" : \"https://ljd.m.jd.com/countersign/index.action\"}"];
+    
+    //京东签到
+    NSString *temp = [NSString stringWithFormat:@"openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"jdreactcommon\",\"modulename\":\"JDReactCollectJDBeans\",\"appname\":\"JDReactCollectJDBeans\",\"ishidden\":true,\"param\":{\"page\":\"collectJDBeansHomePage\",\"source\":\"jrsq17\",\"transparentenable\":true}}"];
+    
+    [self  JumpToUrlScheme:temp];
+   
+}
+
+- (IBAction)jdmobileSign:(id)sender {
+    //京东金融签到
+    NSString *temp = [NSString stringWithFormat:@"jdmobile://share?jumpType=7&jumpUrl=243&channel=default&sourceUrl=1000*https://m.jr.jd.com/spe/downloadApp/index.html?id=94"];
+    
+    [self  JumpToUrlScheme:temp];
+}
+
+- (IBAction)alipayLuckyMoney:(id)sender {
+    //支付宝红包 
+    NSString *temp = [NSString stringWithFormat:@"alipays://platformapi/startapp?appId=20000067&__open_alipay__=YES&url=https://render.alipay.com/p/f/fd-j6lzqrgm/guiderofmklvtvw.html?shareId=2088802685431555&campStr=p1j+dzkZl018zOczaHT4Z5CLdPVCgrEXq89JsWOx1gdt05SIDMPg3PTxZbdPw9dL&sign=qDuk9wbMLAmTU17dwUZiF8m0EnUCOV6iLkYLWxzpBm8=&scene=offlinePaymentNewSns"];
+    
+    [self  JumpToUrlScheme:temp];
 }
 
 
