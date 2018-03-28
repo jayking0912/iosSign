@@ -37,6 +37,8 @@
 	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>sinaweibo</string>
+		<string>qqnews</string>
 		<string>alipays</string>
 		<string>openapp.jdmobile</string>
 		<string>jdmobile</string>

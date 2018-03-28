@@ -68,5 +68,30 @@
     [self  JumpToUrlScheme:temp];
 }
 
+- (IBAction)QQnewMoney:(id)sender {
+    //腾讯新闻红包
+    NSString *temp = [NSString stringWithFormat:@"qqnews://article_9527?nm=RSS2017113003249400"];
+    
+    [self  JumpToUrlScheme:temp];
+}
+
+- (IBAction)sinaWeiboMoney:(id)sender {
+    //新浪微博红包
+    NSString *temp = [NSString stringWithFormat:@"sinaweibo://browser?url=https://m.weibo.cn/c/ckin?luicode=10000004&luicode=20000319&luicode=20000318"];
+    [self JumpToUrlScheme:temp];
+}
+- (IBAction)jdMobileMoney:(id)sender {
+    //盼盼 京东金融红包
+    NSString *temp = [NSString stringWithFormat:@"jdmobile://share?jumpType=7&jumpUrl=512&channel=default&sourceUrl=1000*https://m.jr.jd.com/spe/downloadApp/index.html?id=599"];
+    [self JumpToUrlScheme:temp];
+}
+
+- (IBAction)jdMobileTraff:(id)sender {
+    //金融送流量
+    NSString *temp = [NSString stringWithFormat:@"jdmobile://share?jumpType=7&jumpUrl=508&channel=default&sourceUrl=1000*https://m.jr.jd.com/spe/downloadApp/index.html?id=285"];
+    [self JumpToUrlScheme:temp];
+}
+
+
 
 @end

@@ -40,7 +40,38 @@
                                 <state key="normal" title="支付宝红包"/>
                                 <connections>
                                     <action selector="alipayLuckyMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4Y-6C-Fft"/>
-                                    <action selector="jdmobileSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Jb-zj-fVE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofl-Fg-eeE">
+                                <rect key="frame" x="138" y="229" width="98" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="腾讯新闻现金"/>
+                                <connections>
+                                    <action selector="QQnewMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWC-ko-pAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-rh-iw9">
+                                <rect key="frame" x="149" y="303" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="微博领红包"/>
+                                <connections>
+                                    <action selector="sinaWeiboMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sge-jS-0PY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-l3-DUx">
+                                <rect key="frame" x="149" y="367" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="金融领红包"/>
+                                <connections>
+                                    <action selector="jdMobileMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbw-tk-l5g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-wM-CaU">
+                                <rect key="frame" x="149" y="421" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="金融送流量"/>
+                                <connections>
+                                    <action selector="jdMobileTraff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBi-p2-dUy"/>
                                 </connections>
                             </button>
                         </subviews>
