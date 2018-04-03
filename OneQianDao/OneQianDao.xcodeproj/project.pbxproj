@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ED48CC420739B79003BEEFB /* CardLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED48CC220739B79003BEEFB /* CardLayoutVC.m */; };
+		0ED48CC720739BB3003BEEFB /* CardLayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED48CC620739BB3003BEEFB /* CardLayOut.m */; };
 		0EFA77C92071112100B8B212 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA77C82071112100B8B212 /* AppDelegate.m */; };
 		0EFA77CC2071112100B8B212 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA77CB2071112100B8B212 /* ViewController.m */; };
 		0EFA77CF2071112100B8B212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA77CD2071112100B8B212 /* Main.storyboard */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ED48CC220739B79003BEEFB /* CardLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardLayoutVC.m; sourceTree = "<group>"; };
+		0ED48CC320739B79003BEEFB /* CardLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLayoutVC.h; sourceTree = "<group>"; };
+		0ED48CC520739BB3003BEEFB /* CardLayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardLayOut.h; path = Layouts/CardLayOut.h; sourceTree = "<group>"; };
+		0ED48CC620739BB3003BEEFB /* CardLayOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardLayOut.m; path = Layouts/CardLayOut.m; sourceTree = "<group>"; };
 		0EFA77C42071112100B8B212 /* OneQianDao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneQianDao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFA77C72071112100B8B212 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0EFA77C82071112100B8B212 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ED48CBF20739853003BEEFB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0ED48CC320739B79003BEEFB /* CardLayoutVC.h */,
+				0ED48CC520739BB3003BEEFB /* CardLayOut.h */,
+				0ED48CC620739BB3003BEEFB /* CardLayOut.m */,
+				0ED48CC220739B79003BEEFB /* CardLayoutVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		0EFA77BB2071112000B8B212 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +123,7 @@
 				0EFA77CA2071112100B8B212 /* ViewController.h */,
 				0EFA77CB2071112100B8B212 /* ViewController.m */,
 				0EFA77CD2071112100B8B212 /* Main.storyboard */,
+				0ED48CBF20739853003BEEFB /* ViewController */,
 				0EFA77D02071112100B8B212 /* Assets.xcassets */,
 				0EFA77D22071112100B8B212 /* LaunchScreen.storyboard */,
 				0EFA77D52071112100B8B212 /* Info.plist */,
@@ -265,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED48CC720739BB3003BEEFB /* CardLayOut.m in Sources */,
 				0EFA77CC2071112100B8B212 /* ViewController.m in Sources */,
 				0EFA77D72071112100B8B212 /* main.m in Sources */,
+				0ED48CC420739B79003BEEFB /* CardLayoutVC.m in Sources */,
 				0EFA77C92071112100B8B212 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
