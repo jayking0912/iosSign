@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MainNavigationController.h
 //  OneQianDao
 //
 //  Created by pi on 06/04/2018.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface MainNavigationController : UINavigationController
 
 @end
-
