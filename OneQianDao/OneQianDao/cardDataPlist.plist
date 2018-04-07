@@ -7,17 +7,17 @@
 		<key>name</key>
 		<string>京东金融</string>
 		<key>donwloadUrl</key>
-		<string></string>
+		<string>https://itunes.apple.com/cn/app/id895682747?mt=8</string>
 		<key>imageName</key>
-		<string></string>
+		<string>JDMobile</string>
 		<key>titleColor</key>
-		<string></string>
+		<string>#FB2C16</string>
 		<key>context</key>
 		<dict>
 			<key>1</key>
 			<dict>
 				<key>headImageName</key>
-				<string></string>
+				<string>flowMoney</string>
 				<key>headText</key>
 				<string>领流量</string>
 				<key>describText</key>
@@ -28,7 +28,7 @@
 			<key>0</key>
 			<dict>
 				<key>headImageName</key>
-				<string></string>
+				<string>coin</string>
 				<key>headText</key>
 				<string>领钢镚</string>
 				<key>describText</key>
@@ -43,17 +43,17 @@
 		<key>name</key>
 		<string>支付宝</string>
 		<key>donwloadUrl</key>
-		<string></string>
+		<string>https://itunes.apple.com/cn/app/id333206289?mt=8</string>
 		<key>imageName</key>
-		<string></string>
+		<string>alipay</string>
 		<key>titleColor</key>
-		<string></string>
+		<string>#56ABE4</string>
 		<key>context</key>
 		<dict>
 			<key>0</key>
 			<dict>
 				<key>headImageName</key>
-				<string></string>
+				<string>LuckMoney</string>
 				<key>headText</key>
 				<string>领红包</string>
 				<key>describText</key>
@@ -66,27 +66,52 @@
 	<key>JD</key>
 	<dict>
 		<key>donwloadUrl</key>
-		<string></string>
+		<string>https://itunes.apple.com/cn/app/id414245413</string>
 		<key>context</key>
 		<dict>
 			<key>0</key>
 			<dict>
 				<key>headImageName</key>
-				<string></string>
+				<string>JDbean</string>
 				<key>headText</key>
 				<string>领京豆</string>
 				<key>describText</key>
-				<string>每天领豆豆，惊喜不断</string>
+				<string>每天领豆豆</string>
 				<key>jumpUrl</key>
 				<string>openapp.jdmobile://virtual?params={\&quot;category\&quot;:\&quot;jump\&quot;,\&quot;des\&quot;:\&quot;jdreactcommon\&quot;,\&quot;modulename\&quot;:\&quot;JDReactCollectJDBeans\&quot;,\&quot;appname\&quot;:\&quot;JDReactCollectJDBeans\&quot;,\&quot;ishidden\&quot;:true,\&quot;param\&quot;:{\&quot;page\&quot;:\&quot;collectJDBeansHomePage\&quot;,\&quot;source\&quot;:\&quot;jrsq17\&quot;,\&quot;transparentenable\&quot;:true}}</string>
 			</dict>
 		</dict>
 		<key>imageName</key>
-		<string></string>
+		<string>JD</string>
 		<key>titleColor</key>
-		<string></string>
+		<string>#F33316</string>
 		<key>name</key>
 		<string>京东</string>
+	</dict>
+	<key>qqNew</key>
+	<dict>
+		<key>donwloadUrl</key>
+		<string>https://itunes.apple.com/cn/app/id399363156?mt=8</string>
+		<key>context</key>
+		<dict>
+			<key>0</key>
+			<dict>
+				<key>headImageName</key>
+				<string>LuckMoney</string>
+				<key>headText</key>
+				<string>领红包</string>
+				<key>describText</key>
+				<string>每天领红包</string>
+				<key>jumpUrl</key>
+				<string>qqnews://article_9527?nm=RSS2017113003249400</string>
+			</dict>
+		</dict>
+		<key>imageName</key>
+		<string>qqNew</string>
+		<key>titleColor</key>
+		<string>#ECF1F7</string>
+		<key>name</key>
+		<string>腾讯新闻</string>
 	</dict>
 </dict>
 </plist>
